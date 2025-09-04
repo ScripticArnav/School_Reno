@@ -1,0 +1,50 @@
+/* Global styles and animations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% { 
+    transform: rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg); 
+  }
+}
+
+/* Apply animations to elements */
+.logo-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+.fade-in-up-delayed-1 {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.fade-in-up-delayed-2 {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+} 
